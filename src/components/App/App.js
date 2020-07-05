@@ -33,8 +33,20 @@ class App extends Component {
     ],
   }
 
-  addTask = () => {
-
+  addTask = (text, date, important) => {
+    const task = {
+      id: this.counter,
+      text,
+      date,
+      important,
+      active: true,
+      finishDate: null,
+    };
+    this.counter++;
+    this.setState(prevState => ({
+      tasks: [...prevState.tasks, task],
+    }));
+    return true;
   }
 
   changeTaskStatus = (id) => {

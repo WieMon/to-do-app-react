@@ -2,13 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Task = (props) => {
-  const{text, date, id, active, finishDate} = props.task;
+  const{id, text, date, important, active, finishDate} = props.task;
+
+  const style = {
+    color: 'red',
+  };
 
   if(active) {
     return (
       <div>
         <p>
-          <strong>{text}</strong> - <span>{date} </span>
+          <strong style={important ? style : null}>{text}</strong> - <span>{date} </span>
           <button onClick={() => props.change(id)}>Done</button>
           <button onClick={() => props.delete(id)}>X</button>
         </p>
