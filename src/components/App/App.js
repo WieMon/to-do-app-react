@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import AddTask from '../AddTask/AddTask';
 import TaskList from '../TaskList/TaskList';
+import './App.scss';
+
 
 class App extends Component {
   counter = 3;
@@ -73,7 +75,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className='App'>
         <h1>ToDo List</h1>
         <AddTask add={this.addTask} />
         <TaskList tasks={this.state.tasks} change={this.changeTaskStatus} delete={this.deleteTask} />

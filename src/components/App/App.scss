@@ -1,0 +1,29 @@
+@import '../../styles/global.scss';
+
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+  height: 670px;
+  background-color: $color-one;
+  overflow-y: scroll;
+  border-radius: 10px;
+  box-shadow: 6px 6px 4px darken($color-two, 20%);
+}
+
+::-webkit-scrollbar {
+  border-radius: 10px;
+  background-color: $color-one;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: darken($color-one, 50%);
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: darken($color-one, 10%);
+}
+
