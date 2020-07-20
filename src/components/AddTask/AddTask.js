@@ -36,7 +36,7 @@ class AddTask extends Component {
   handleClick = () => {
     const {text, checked, date} = this.state;
 
-    if(text.length > 2) {
+    if(text.length > 2 && text.length < 30) {
       const add = this.props.add(text, date, checked);
       if(add) {
         this.setState({
@@ -46,7 +46,7 @@ class AddTask extends Component {
         });
       }
     } else {
-      alert('Task cannot be shorter than 2 characters.');
+      alert('Task cannot be shorter than 2 characters and longer than 20 characters');
     }
   }
 

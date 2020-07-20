@@ -56,6 +56,7 @@
     background-color: $color_four;
     border-radius: $radius;
     box-shadow: 2px 2px 1px darken($color-one, 50%);
+    cursor: pointer;
   }
   &::after {
     position: absolute;

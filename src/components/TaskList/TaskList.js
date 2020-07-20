@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Task from '../Task//Task';
+import './TaskList.scss';
 
 const TaskList = (props) => {
   const active = props.tasks.filter(task => task.active);
@@ -46,16 +47,16 @@ const TaskList = (props) => {
     />);
 
   return (
-    <>
-      <div className='active'>
-        <h2>Tasks to do</h2>
+    <div className='TaskList'>
+      <div className='TaskList__active active'>
+        <h2 className='TaskList__title-active' >Tasks to do</h2>
         {activeTasks}
       </div>
-      <div className='done'>
-        <h2>Tasks done</h2>
+      <div className='TaskList__done done'>
+        <h2 className='TaskList__title-done'>Tasks done</h2>
         {doneTasks}
       </div>
-    </>
+    </div>
   );
 };
 

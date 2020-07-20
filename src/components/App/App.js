@@ -10,7 +10,7 @@ class App extends Component {
     tasks: [
       {
         id: 0,
-        text: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet',
         date: '2020-09-15',
         important: false,
         active: true,
@@ -18,7 +18,7 @@ class App extends Component {
       },
       {
         id: 1,
-        text: 'Suspendisse potenti.',
+        text: 'Suspendisse potenti',
         date: '2020-08-26',
         important: true,
         active: true,
@@ -26,7 +26,7 @@ class App extends Component {
       },
       {
         id: 2,
-        text: 'Etiam in dapibus nulla.',
+        text: 'Etiam in dapibus nulla',
         date: '2020-10-10',
         important: false,
         active: true,

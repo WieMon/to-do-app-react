@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Task.scss';
 
 const Task = (props) => {
   const{id, text, date, important, active, finishDate} = props.task;
@@ -10,24 +11,29 @@ const Task = (props) => {
 
   if(active) {
     return (
-      <div>
-        <p>
-          <strong style={important ? style : null}>{text}</strong> - <span>{date} </span>
-          <button onClick={() => props.change(id)}>Done</button>
-          <button onClick={() => props.delete(id)}>X</button>
-        </p>
+      <div className='Task'>
+        <div className='Task__active'>
+          <strong style={important ? style : null}>{text}</strong> <span>({date}) </span>
+        </div>
+        <div className='Task__active'>
+          <button className='Task__btn-done' onClick={() => props.change(id)}>Done</button>
+          <button className='Task__btn-delete' onClick={() => props.delete(id)}>X</button>
+        </div>
       </div>
     );
   } else {
-    const finish = new Date(finishDate).toLocaleString();
+    const finish = new Date(finishDate).toISOString().slice(0,10);
+
     return (
-      <div>
-        <p>
-          <strong>{text}</strong><em>(Due date: {date})</em>
+      <div className='Task'>
+        <div className='Task__done'>
+          <strong>{text}</strong> <span>({date}) </span>
           <br />
-          (Completed: <span>{finish}</span>)
-          <button onClick={() => props.delete(id)}>X</button>
-        </p>
+          <span className='Task__small'>(Completed on: {finish})</span>
+        </div>
+        <div className='Task__done'>
+          <button className='Task__btn-delete' onClick={() => props.delete(id)}>X</button>
+        </div>
       </div>
     );
   }
