@@ -3,6 +3,7 @@
 .App {
   display: flex;
   flex-direction: column;
+
   padding: 20px;
   text-align: center;
   width: 600px;
@@ -11,6 +12,13 @@
   overflow-y: scroll;
   border-radius: 10px;
   box-shadow: 6px 6px 4px darken($color-two, 20%);
+}
+
+.App__title {
+  padding: 10px;
+  font-family: $font-one;
+  font-size: 2em;
+  
 }
 
 ::-webkit-scrollbar {

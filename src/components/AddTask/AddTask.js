@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './AddTask.scss';
 
 class AddTask extends Component {
   minDate = new Date().toISOString().slice(0,10);
@@ -54,14 +55,19 @@ class AddTask extends Component {
     maxDate = `${maxDate}-12-31`;
 
     return (
-      <div>
-        <input type='text' placeholder='task' value={this.state.text} onChange={this.handleText} />
-        <input type='checkbox' checked={this.state.checked} onChange={this.handleCheckbox} />
-        <label htmlFor='important'>Important</label>
-        <br />
-        <label htmlFor='date'>Due date </label>
-        <input type='date' value={this.state.date} min={this.minDate} max={this.maxDate} onChange={this.handleDate} />
-        <button onClick={this.handleClick}>Add</button>
+      <div className='AddTask'>
+        <div className='AddTask__wrapper'>
+          <input className='AddTask__input' type='text' placeholder='task' value={this.state.text} onChange={this.handleText} />
+          <div>
+            <input className='AddTask__checkbox' id='important' type='checkbox' checked={this.state.checked} onChange={this.handleCheckbox} />
+            <label className='AddTask__label' htmlFor='important'>Important</label>
+          </div>
+        </div>
+        <div className='AddTask__wrapper'>
+          <input className='AddTask__input' type='date' value={this.state.date} min={this.minDate} max={this.maxDate} onChange={this.handleDate} />
+          <button className='AddTask__btn' onClick={this.handleClick}>Add</button>
+        </div>
+
       </div>
     );
   }
