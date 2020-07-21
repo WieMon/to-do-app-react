@@ -3,6 +3,7 @@
 .Task {
   display: flex;
   justify-content: space-between;
+
 }
 
 .Task__active, .Task__done {//one class
@@ -12,11 +13,9 @@
 
 .Task__done {
   text-align: left;
-}
-
-.Task__small {
-  font-size: 0.8em;
-  flex-basis: 100%;
+  font-size: 13px;
+  line-height: 1.4em;
+  margin-bottom: 10px;
 }
 
 .Task__btn-done { //the same style with AddTask btn
@@ -29,10 +28,14 @@
   border-radius: $radius;
   text-transform: uppercase;
   font-size: 10px;
+  color: $color-three;
   &:hover {
     box-shadow: 2px 2px 1px $color-two;
     color: $color-two;
     cursor: pointer;
+  }
+  &:focus {
+    outline: none;
   }
 }
 
@@ -42,10 +45,14 @@
     border: none;
     background-color: $color_four;
     border-radius: $radius;
+    color: $color-three;
     box-shadow: 2px 2px 1px darken($color-one, 50%);
     &:hover {
       cursor: pointer;
       box-shadow: 2px 2px 1px $color-two;
       color: $color-two;
+    }
+    &:focus {
+      outline: none;
     }
 }

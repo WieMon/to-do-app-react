@@ -3,16 +3,22 @@
 .TaskList__active {
   border-bottom: 2px solid $color-two;
   //background-color: darken($color-four,4%);
-  box-shadow:  2px 2px 2px $color-one;
+  //box-shadow:  2px 2px 2px $color-one;
   //border-radius: $radius;
+
 }
 
 .TaskList__active, .TaskList__done {
-  padding: 10px;
+  padding: 10px 5px;
+
 }
 
-.TaskList__title-active, .TaskList__title-done {
+.TaskList__title-active {
   font-size: 1.5em;
   //padding: 5px;
-  margin: 5px;
+  margin-bottom: 15px;
+}
+.TaskList__title-done {
+  font-size: 1.2em;
+  margin: 10px 0;
 }

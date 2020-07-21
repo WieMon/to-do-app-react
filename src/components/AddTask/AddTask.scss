@@ -3,8 +3,8 @@
 .AddTask {
   display: flex;
   flex-direction: column;
-  padding: 5px;
-  margin-bottom: 20px;
+
+  margin-bottom: 15px;
   font-family: $font-one;
   color: $color-three;
 }
@@ -25,6 +25,7 @@
   border-radius: $radius;
   box-shadow: 2px 2px 1px darken($color-one, 50%);
   font-size: 10px;
+  color: $color-five;
 }
 
 .AddTask__checkbox {
@@ -80,6 +81,7 @@
   height: 20px;
   border: none;
   background-color: $color-four;
+  color: $color-three;
   box-shadow: 2px 2px 1px darken($color-one, 50%);
   border-radius: $radius;
   text-transform: uppercase;
@@ -88,6 +90,9 @@
     box-shadow: 2px 2px 1px $color-two;
     color: $color-two;
     cursor: pointer;
+  }
+  &:focus {
+    outline: none;
   }
 }
 
