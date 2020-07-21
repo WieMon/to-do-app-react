@@ -8,5 +8,6 @@ $color-five: #7f8c8d;
 $font-one: 'Roboto', sans-serif;
 $font-two: 'rchitects Daughter', cursive;
 $radius: 5px;
-
-
+$shadow-one: 2px 2px 1px darken($color-one, 50%);
+$shadow-two: 2px 2px 1px $color-two;
+$shadow-three: 8px 8px 4px $color-three;

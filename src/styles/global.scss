@@ -19,3 +19,26 @@ body {
   height: 100%;
   color: $color-three;
 }
+
+.btn-long {
+  padding: 3px 10px;
+  margin: 0 7px;
+  height: 20px;
+  border: none;
+  border-radius: $radius;
+  background-color: $color-four;
+  box-shadow: 2px 2px 1px darken($color-one, 50%);
+  color: $color-three;
+  font-size: 10px;
+  text-transform: uppercase;
+    &:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 1px $color-two;
+    color: $color-two;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+

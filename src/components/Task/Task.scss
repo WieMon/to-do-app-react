@@ -3,56 +3,35 @@
 .Task {
   display: flex;
   justify-content: space-between;
-
 }
 
-.Task__active, .Task__done {//one class
-  line-height: 1.7em;
+.Task__active {
   font-family: $font-two;
+  line-height: 1.7em;
 }
 
 .Task__done {
   text-align: left;
+  margin-bottom: 10px;
+  font-family: $font-two;
   font-size: 13px;
   line-height: 1.4em;
-  margin-bottom: 10px;
-}
-
-.Task__btn-done { //the same style with AddTask btn
-  padding: 3px 10px;
-  margin: 0 7px;
-  height: 20px;
-  border: none;
-  background-color: $color-four;
-  box-shadow: 2px 2px 1px darken($color-one, 50%);
-  border-radius: $radius;
-  text-transform: uppercase;
-  font-size: 10px;
-  color: $color-three;
-  &:hover {
-    box-shadow: 2px 2px 1px $color-two;
-    color: $color-two;
-    cursor: pointer;
-  }
-  &:focus {
-    outline: none;
-  }
 }
 
 .Task__btn-delete {
   height: 20px;
-    width: 20px;
-    border: none;
-    background-color: $color_four;
-    border-radius: $radius;
-    color: $color-three;
-    box-shadow: 2px 2px 1px darken($color-one, 50%);
-    &:hover {
-      cursor: pointer;
-      box-shadow: 2px 2px 1px $color-two;
-      color: $color-two;
-    }
-    &:focus {
-      outline: none;
-    }
+  width: 20px;
+  border: none;
+  border-radius: $radius;
+  background-color: $color_four;
+  box-shadow: $shadow-one;
+  color: $color-three;
+  &:hover {
+    cursor: pointer;
+    box-shadow: $shadow-two;
+    color: $color-two;
+  }
+  &:focus {
+    outline: none;
+  }
 }

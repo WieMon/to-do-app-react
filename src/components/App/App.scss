@@ -3,35 +3,33 @@
 .App {
   display: flex;
   flex-direction: column;
-
-  padding: 20px;
   text-align: center;
+  padding: 20px;
   width: 600px;
   height: 670px;
-  background-color: $color-one;
-  overflow-y: scroll;
   border-radius: 10px;
-  box-shadow: 8px 8px 4px $color-three;
+  overflow-y: scroll;
+  background-color: $color-one;
+  box-shadow: $shadow-three;
 }
 
 .App__title {
   margin-bottom: 15px;
   font-family: $font-one;
   font-size: 2em;
-
 }
 
 ::-webkit-scrollbar {
-  border-radius: 10px;
+  border-radius: $radius;
   background-color: $color-one
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
+  border-radius: $radius;
   background-color: darken($color-two, 5%);
 }
 ::-webkit-scrollbar-track {
-  border-radius: 10px;
+  border-radius: $radius;
   background-color: darken($color-one, 15%);
 }
 

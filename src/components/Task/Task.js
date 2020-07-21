@@ -16,8 +16,8 @@ const Task = (props) => {
           <strong style={important ? style : null}>{text}</strong> <span>({date}) </span>
         </div>
         <div className='Task__active'>
-          <button className='Task__btn-done' onClick={() => props.change(id)}>Done</button>
-          <button className='Task__btn-delete' onClick={() => props.delete(id)}>X</button>
+          <button className='btn-long' onClick={() => props.change(id)}>Done</button>
+          <button className='Task__btn-delete btn-short' onClick={() => props.delete(id)}>X</button>
         </div>
       </div>
     );
@@ -32,7 +32,7 @@ const Task = (props) => {
           <span className='Task__small'>(Completed on: {finish})</span>
         </div>
         <div className='Task__done'>
-          <button className='Task__btn-delete' onClick={() => props.delete(id)}>X</button>
+          <button className='Task__btn-delete btn-short' onClick={() => props.delete(id)}>X</button>
         </div>
       </div>
     );

@@ -59,13 +59,13 @@ class AddTask extends Component {
         <div className='AddTask__wrapper'>
           <input className='AddTask__input' type='text' placeholder='task' value={this.state.text} onChange={this.handleText} />
           <div>
-            <input className='AddTask__checkbox' id='important' type='checkbox' checked={this.state.checked} onChange={this.handleCheckbox} />
+            <input className='AddTask__checkbox btn-short' id='important' type='checkbox' checked={this.state.checked} onChange={this.handleCheckbox} />
             <label className='AddTask__label' htmlFor='important'>Important</label>
           </div>
         </div>
         <div className='AddTask__wrapper'>
           <input className='AddTask__input' type='date' value={this.state.date} min={this.minDate} max={this.maxDate} onChange={this.handleDate} />
-          <button className='AddTask__btn' onClick={this.handleClick}>Add</button>
+          <button className='btn-long' onClick={this.handleClick}>Add</button>
         </div>
 
       </div>
