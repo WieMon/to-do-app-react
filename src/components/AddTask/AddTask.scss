@@ -13,6 +13,10 @@
   justify-content: center;
   align-items: center;
   margin: 5px;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    margin: 10px 0;
+  }
 }
 
 .AddTask__input {
@@ -25,6 +29,9 @@
   box-shadow: $shadow-one;
   font-size: 10px;
   color: $color-five;
+  @media (max-width: 480px) {
+    margin-bottom: 10px;
+  }
 }
 
 .AddTask__checkbox {
@@ -43,6 +50,9 @@
 .AddTask__label {
   position: relative;
   padding-left: 21px;
+  @media (max-width: 480px) {
+      padding-top: 1px;
+  }
   &::before {
     position: absolute;
     top: -1px;
@@ -58,6 +68,7 @@
     box-shadow: $shadow-one;
     color: $color-three;
     cursor: pointer;
+
   }
   &::after {
     position: absolute;

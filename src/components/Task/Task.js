@@ -12,12 +12,12 @@ const Task = (props) => {
   if(active) {
     return (
       <div className='Task'>
-        <div className='Task__active'>
+        <div className='Task__active-one'>
           <strong style={important ? style : null}>{text}</strong> <span>({date}) </span>
         </div>
-        <div className='Task__active'>
+        <div className='Task__active-two'>
           <button className='btn-long' onClick={() => props.change(id)}>Done</button>
-          <button className='Task__btn-delete btn-short' onClick={() => props.delete(id)}>X</button>
+          <button className='Task__btn-delete' onClick={() => props.delete(id)}>X</button>
         </div>
       </div>
     );
@@ -29,10 +29,10 @@ const Task = (props) => {
         <div className='Task__done'>
           <strong>{text}</strong> <span>({date}) </span>
           <br />
-          <span className='Task__small'>(Completed on: {finish})</span>
+          <span>(Completed on: {finish})</span>
         </div>
         <div className='Task__done'>
-          <button className='Task__btn-delete btn-short' onClick={() => props.delete(id)}>X</button>
+          <button className='Task__btn-delete' onClick={() => props.delete(id)}>X</button>
         </div>
       </div>
     );
