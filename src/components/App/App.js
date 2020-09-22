@@ -10,7 +10,7 @@ class App extends Component {
     tasks: [
       {
         id: 0,
-        text: 'Buy a new a new laptop',
+        text: 'Buy a new laptop',
         date: '2020-11-15',
         important: false,
         active: true,
@@ -26,7 +26,7 @@ class App extends Component {
       },
       {
         id: 2,
-        text: 'Happy Friday Beer',
+        text: 'Happy Friday beer',
         date: '2020-11-27',
         important: false,
         active: true,
@@ -76,7 +76,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <h1 className='App__title'>ToDo List</h1>
+        <h1 className='App__title'>To-Do List</h1>
         <AddTask add={this.addTask} />
         <TaskList tasks={this.state.tasks} change={this.changeTaskStatus} delete={this.deleteTask} />
       </div>
