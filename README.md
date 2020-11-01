@@ -1,4 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# to-do-app-react
+
+## Description:
+The task list built in React using CRA with modified configurations. The to-dos can be flagged as important and due dates manually selected.
+
+[DEMO]()
+
+## Technologies:
+- React: 16.13.1
+- ReactDOM: 16.13.1
+- react-scripts: 3.4.1
+- React Test Renderer: 16.13.1
+- JavaScript
+- Sass/SCSS: BEM
+- HTML5
+- Node.js: 10.17.0
+- node-sass: 4.14.1
+- types/jest: 26.0.3
+- types/node: 14.0.14
+- types/react: 16.9.41
+- types/react-dom: 16.9.8
+- Enzyme: 3.11.0
+- enzyme-adapter-react-16: 1.15.2
+- Husky: 4.2.5
+- lint-staged: 10.2.11
+- npm-run-all: 4.1.5
+- Yarn: 1.22.4
+- Git: 2.24.0
+- EditorConfig: 0.15.1 & `.editorconfig`
+- ESLint from react-scripts modified: see `.eslintrc`
+- google fonts: roboto & architects+daughter
+
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

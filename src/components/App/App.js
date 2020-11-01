@@ -11,7 +11,7 @@ class App extends Component {
       {
         id: 0,
         text: 'Buy a new laptop',
-        date: '2020-11-15',
+        date: '2020-10-15',
         important: false,
         active: true,
         finishDate: null,
@@ -19,7 +19,7 @@ class App extends Component {
       {
         id: 1,
         text: 'Pay the rent',
-        date: '2020-11-30',
+        date: '2020-09-30',
         important: true,
         active: true,
         finishDate: null,
@@ -27,7 +27,7 @@ class App extends Component {
       {
         id: 2,
         text: 'Happy Friday beer',
-        date: '2020-11-27',
+        date: '2020-10-02',
         important: false,
         active: true,
         finishDate: null,
