@@ -2,7 +2,6 @@
 
 ## Description:
 The task list built in React using CRA with modified configurations. The to-dos can be flagged as important and due dates manually selected.
-
 [DEMO](https://wiemon.github.io/to-do-app-react/)
 
 ## Technologies:
