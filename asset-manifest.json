@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "//wiemon.github.io/to-do-app-react/static/css/main.e66b5095.chunk.css",
+    "main.js": "//wiemon.github.io/to-do-app-react/static/js/main.566b4e68.chunk.js",
+    "main.js.map": "//wiemon.github.io/to-do-app-react/static/js/main.566b4e68.chunk.js.map",
+    "runtime-main.js": "//wiemon.github.io/to-do-app-react/static/js/runtime-main.20bcba7e.js",
+    "runtime-main.js.map": "//wiemon.github.io/to-do-app-react/static/js/runtime-main.20bcba7e.js.map",
+    "static/js/2.79c5faf8.chunk.js": "//wiemon.github.io/to-do-app-react/static/js/2.79c5faf8.chunk.js",
+    "static/js/2.79c5faf8.chunk.js.map": "//wiemon.github.io/to-do-app-react/static/js/2.79c5faf8.chunk.js.map",
+    "index.html": "//wiemon.github.io/to-do-app-react/index.html",
+    "precache-manifest.b62fc90e1b2f6a790ee1af584fa0da9d.js": "//wiemon.github.io/to-do-app-react/precache-manifest.b62fc90e1b2f6a790ee1af584fa0da9d.js",
+    "service-worker.js": "//wiemon.github.io/to-do-app-react/service-worker.js",
+    "static/css/main.e66b5095.chunk.css.map": "//wiemon.github.io/to-do-app-react/static/css/main.e66b5095.chunk.css.map",
+    "static/js/2.79c5faf8.chunk.js.LICENSE.txt": "//wiemon.github.io/to-do-app-react/static/js/2.79c5faf8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.20bcba7e.js",
+    "static/js/2.79c5faf8.chunk.js",
+    "static/css/main.e66b5095.chunk.css",
+    "static/js/main.566b4e68.chunk.js"
+  ]
+}
