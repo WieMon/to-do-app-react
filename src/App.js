@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import AddTask from '../AddTask/AddTask';
-import TaskList from '../TaskList/TaskList';
+import AddTask from './components/AddTask/AddTask';
+import TaskList from './components/TaskList/TaskList';
 import './App.scss';
 
 
